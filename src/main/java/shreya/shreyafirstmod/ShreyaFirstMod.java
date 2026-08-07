@@ -6,6 +6,7 @@ import net.minecraft.resources.Identifier;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import shreya.shreyafirstmod.creative_mode_tab.ModCreativeModeTabs;
 import shreya.shreyafirstmod.item.ModItems;
 
 public class ShreyaFirstMod implements ModInitializer {
@@ -18,6 +19,7 @@ public class ShreyaFirstMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModCreativeModeTabs.registerModCreativeModeTabs();
 		ModItems.registerModItems();
 		LOGGER.info("Hello Fabric world!");
 	}

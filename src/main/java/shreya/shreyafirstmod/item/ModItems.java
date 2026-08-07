@@ -16,6 +16,7 @@ import java.util.function.Function;
 public class ModItems {
     public static final Item TOOTHPASTE = registerItem("toothpaste", Item::new);
 
+
     // returns an Item (defined by mc)
     private static Item registerItem(String name, Function<Item.Properties, Item> function){
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(ShreyaFirstMod.MOD_ID, name),
